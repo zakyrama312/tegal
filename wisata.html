@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+<style>
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color: rgba(128, 128, 128, 0.377)
+}
+.jumbotron{
+    height: 657px;
+    background: rgba(0, 0, 0, 0.918);
+    position: relative;
+    overflow: hidden;
+    
+}
+.jumbotron::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/3.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: .3;
+    /* animation: anim 25s linear infinite; */
+
+}
+/* @keyframes anim{
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
+.display-4{
+    margin-top: 125px;
+    font-size: 70px;
+    color: white;
+}
+p{
+    text-indent: 50px;
+    text-align: justify
+}
+.card:hover{
+    transform: scale(1.1)
+}
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container">
+                    <a href="#beranda" class="navbar-brand">TEGAL</a>
+                    <div class="collapse navbar-collapse" id="navbarNavMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a href="index.html#beranda" class="nav-item nav-link page-scroll active">Beranda</a>
+                            <a href="index.html#tentang" class="nav-item nav-link page-scroll">Tentang</a>
+                            <a href="index.html#berita" class="nav-item nav-link page-scroll">Wisata</a>
+                            <a href="index.html#galeri" class="nav-item nav-link page-scroll">Galeri</a>
+                            <a href="index.html#kontak" class="nav-item nav-link page-scroll">Kontak</a>
+                            <a href="login.html" class="btn btn-primary ml-3">Login</a>
+                        </div>
+                    </div>
+                </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" id="beranda">
+            <div class="container text-center">
+                <!-- <h2 class="txt1 display-4 " id="text" >Selamat Datang</h2>
+                <p class="txt2 text-center" style="font-size: 20px; color: white">Di Kabupaten Tegal</p>
+                <p class="txt2 text-center btn btn-outline-primary" style="font-size: 20px; color: white"><i>"Ora Ngapak Ora Kepenak"</i></p> -->
+                <!-- <a href="" class="btn btn-outline-primary" style="margin-left: 48%">Kontak</a> -->
+            </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-12">
+                <h2>Judul Wisata</h2>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita officia, accusamus quaerat rem reiciendis, illo numquam maxime possimus qui aliquam facere sapiente aspernatur tempore similique odit, aperiam nulla accusantium esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum accusamus in maiores sunt minima dolor adipisci repellendus, quibusdam dicta laboriosam saepe optio, magni doloremque laborum deserunt natus vel rem distinctio.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt animi aliquam facere omnis adipisci. Praesentium, repellat fuga ab alias doloremque quae ipsa earum facilis, eaque, quos in doloribus sit aliquid.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat vel consectetur, qui recusandae inventore totam dolorem fugit soluta commodi? Optio deleniti repudiandae saepe repellat ducimus cum ut beatae voluptates!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sed rem dolorem rerum similique, neque tempora reprehenderit adipisci incidunt tenetur inventore id minus aliquam cumque molestias hic temporibus dignissimos a!</p>
+            </div>
+        </div>
+        
+       <section style="background-color: rgba(128, 128, 128, 0.226);padding-left: 10px;">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="mt-3">Galeri Foto Wisata</h2>
+                    </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-12">
+                        <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                        <a href="../images/3.jpg" data-lightbox="roadtrip">
+                                            <img src="../images/3.jpg"  alt="Lak danawarih" class="card-img-top" alt="">
+                                        </a>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                            <a href="../images/3.jpg" data-lightbox="roadtrip">
+                                                <img src="../images/3.jpg"  alt="Lak danawarih" class="card-img-top" alt="">
+                                            </a>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                            <a href="../images/3.jpg" data-lightbox="roadtrip">
+                                                <img src="../images/3.jpg"  alt="Lak danawarih" class="card-img-top" alt="">
+                                            </a>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                            <a href="../images/3.jpg" data-lightbox="roadtrip">
+                                                <img src="../images/3.jpg"  alt="Lak danawarih" class="card-img-top" alt="">
+                                            </a>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                            <a href="../images/3.jpg" data-lightbox="roadtrip">
+                                                <img src="../images/3.jpg"  alt="Lak danawarih" class="card-img-top" alt="">
+                                            </a>
+                                      </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                            <a href="../images/3.jpg" data-lightbox="roadtrip">
+                                                <img src="../images/3.jpg"  alt="Lak danawarih" class="card-img-top" alt="">
+                                            </a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                              </div>
+    
+    
+                </div>    
+            </div>
+       </section>
+        <div class="row mt-5">
+                <div class="col-sm-12">
+                    <h2>Lokasi</h2>
+                </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0227313368114!2d109.18319017986023!3d-7.006606070605552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbf8b9e59ec3f%3A0x7dac8fbb737a6f97!2sWaduk+Cacaban!5e0!3m2!1sid!2sid!4v1565842170597!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row mt-5">
+                <div class="col-sm-12 ">
+                    <p class="text-center">copyright &copy;2019</p>
+                </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+       var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+      </script>
+</body>
+</html>
